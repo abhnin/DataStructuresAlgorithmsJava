@@ -1,8 +1,10 @@
 package com.abhnin.dsalgojavall.sorting;
 
-public class BubbleSort implements Sort {
+public class BubbleSort extends SortUtils implements Sort {
     @Override
-    public int[] sort(int[] unSortedArray) {
+    public void sort(int[] unSortedArray) {
+        System.out.print("Input: ");
+        printArray(unSortedArray);
         int len = unSortedArray.length;
         int temp;
 
@@ -16,6 +18,8 @@ public class BubbleSort implements Sort {
             }
         }
 
-        return unSortedArray;
+        System.out.print("Output: ");
+        printArray(unSortedArray);
     }
+
 }
