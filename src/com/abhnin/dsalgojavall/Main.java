@@ -1,11 +1,17 @@
 package com.abhnin.dsalgojavall;
 
-import com.abhnin.dsalgojavall.sorting.BubbleSort;
+import com.abhnin.dsalgojavall.sorting.SortAlgo;
+import com.abhnin.dsalgojavall.sorting.Sorter;
+import com.abhnin.dsalgojavall.util.Utils;
 
 public class Main {
 
     public static void main(String[] args){
+
         int[] unSortedArray = new int[]{ 3,60,35,2,45,320,5 };
-        new BubbleSort().sort(unSortedArray);
+        Utils.printArray(unSortedArray);
+
+        Utils.printArray(new Sorter().sort(unSortedArray, SortAlgo.BubbleSort));
+
     }
 }

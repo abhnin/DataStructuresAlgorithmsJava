@@ -1,9 +1,9 @@
-package com.abhnin.dsalgojavall.sorting;
+package com.abhnin.dsalgojavall.sorting.sortingalgos;
 
-public class BubbleSort extends SortUtils implements Sort {
-    @Override
-    public void sort(int[] unSortedArray) {
-        printArray(unSortedArray);
+import com.abhnin.dsalgojavall.sorting.Sort;
+
+public class BubbleSort implements Sort {
+    public int[] sort(int[] unSortedArray) {
         int lastIndex = unSortedArray.length - 1;
         int temp;
 
@@ -17,6 +17,6 @@ public class BubbleSort extends SortUtils implements Sort {
             }
         }
 
-        printArray(unSortedArray);
+        return unSortedArray;
     }
 }
