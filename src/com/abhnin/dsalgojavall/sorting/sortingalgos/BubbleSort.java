@@ -1,8 +1,9 @@
 package com.abhnin.dsalgojavall.sorting.sortingalgos;
 
-import com.abhnin.dsalgojavall.sorting.Sort;
+import com.abhnin.dsalgojavall.sorting.Sortable;
 
-public class BubbleSort implements Sort {
+public class BubbleSort implements Sortable {
+    @Override
     public int[] sort(int[] unSortedArray) {
         int lastIndex = unSortedArray.length - 1;
         int temp;

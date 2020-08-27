@@ -1,5 +1,5 @@
 package com.abhnin.dsalgojavall.sorting;
 
-public interface Sort {
+public interface Sortable {
     int[] sort(int[] unSortedArray);
 }
