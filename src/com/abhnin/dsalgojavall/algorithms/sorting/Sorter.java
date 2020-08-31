@@ -1,8 +1,8 @@
-package com.abhnin.dsalgojavall.sorting;
+package com.abhnin.dsalgojavall.algorithms.sorting;
 
-import com.abhnin.dsalgojavall.sorting.sortingalgos.BubbleSort;
-import com.abhnin.dsalgojavall.sorting.sortingalgos.InsertionSort;
-import com.abhnin.dsalgojavall.sorting.sortingalgos.SelectionSort;
+import com.abhnin.dsalgojavall.algorithms.sorting.sortingalgos.BubbleSort;
+import com.abhnin.dsalgojavall.algorithms.sorting.sortingalgos.InsertionSort;
+import com.abhnin.dsalgojavall.algorithms.sorting.sortingalgos.SelectionSort;
 
 public class Sorter {
     public int[] sort(int[] unSortedArray, SortAlgo sortAlgo) {

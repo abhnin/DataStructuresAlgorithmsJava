@@ -1,4 +1,4 @@
-package com.abhnin.dsalgojavall.sorting;
+package com.abhnin.dsalgojavall.algorithms.sorting;
 
 public class MasterSort{
     private long startTime;

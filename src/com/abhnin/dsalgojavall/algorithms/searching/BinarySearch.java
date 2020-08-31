@@ -1,4 +1,4 @@
-package com.abhnin.dsalgojavall.searching;
+package com.abhnin.dsalgojavall.algorithms.searching;
 
 public class BinarySearch {
     public int search(int[] array, int numberToSearch) {

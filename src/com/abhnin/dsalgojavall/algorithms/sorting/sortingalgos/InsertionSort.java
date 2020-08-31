@@ -1,7 +1,7 @@
-package com.abhnin.dsalgojavall.sorting.sortingalgos;
+package com.abhnin.dsalgojavall.algorithms.sorting.sortingalgos;
 
-import com.abhnin.dsalgojavall.sorting.MasterSort;
-import com.abhnin.dsalgojavall.sorting.Sortable;
+import com.abhnin.dsalgojavall.algorithms.sorting.MasterSort;
+import com.abhnin.dsalgojavall.algorithms.sorting.Sortable;
 
 public class InsertionSort extends MasterSort implements Sortable {
     @Override

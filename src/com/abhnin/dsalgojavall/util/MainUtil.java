@@ -1,8 +1,8 @@
 package com.abhnin.dsalgojavall.util;
 
-import com.abhnin.dsalgojavall.searching.BinarySearch;
-import com.abhnin.dsalgojavall.sorting.SortAlgo;
-import com.abhnin.dsalgojavall.sorting.Sorter;
+import com.abhnin.dsalgojavall.algorithms.searching.BinarySearch;
+import com.abhnin.dsalgojavall.algorithms.sorting.SortAlgo;
+import com.abhnin.dsalgojavall.algorithms.sorting.Sorter;
 
 import java.util.Random;
 
