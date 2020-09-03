@@ -1,23 +1,28 @@
 package com.abhnin.dsalgojavall;
+import com.abhnin.dsalgojavall.ds.linkedlist.DoublyLinkedList;
+import com.sun.org.apache.xpath.internal.operations.Bool;
 
-
-import com.abhnin.dsalgojavall.ds.linkedlist.LinkedList;
+import java.util.HashSet;
 
 public class Main {
 
     public static void main(String[] args){
-
-        LinkedList linkedList = new LinkedList();
+        DoublyLinkedList linkedList = new DoublyLinkedList();
 
         int x = 1;
-        while (x <= 10){
-            linkedList.addNodeAtTail(x);
+        while (x <= 8){
+            linkedList.insertAtHead(x);
             x++;
         }
 
-        linkedList.deleteFromHead();
 
         System.out.println(linkedList.size());
         System.out.println(linkedList.toString());
+        linkedList.sort();
+        System.out.println(linkedList.toString());
+
+
     }
+
+
 }

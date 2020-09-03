@@ -31,7 +31,7 @@ public class LinkedList {
         return tempNode;
     }
     public int size(){
-        if (headNode == null)
+        if (this.headNode == null)
             return 0;
 
         Node tempNode = headNode;
