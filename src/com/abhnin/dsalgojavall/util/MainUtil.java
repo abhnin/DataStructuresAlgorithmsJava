@@ -26,7 +26,7 @@ public class MainUtil {
         Utils.printArray(sorter.sort(unSortedArray.clone(), SortAlgo.InsertionSort));
     }
     public static void searchRun() {
-        int arr[] = { 2, 3, 4, 10, 40, 6333335 };
+        int[] arr = { 2, 3, 4, 10, 40, 6333335 };
         BinarySearch binarySearch = new BinarySearch();
         int foundAt = binarySearch.search(arr, 6333335);
         System.out.println("Found at position: " + ++foundAt);

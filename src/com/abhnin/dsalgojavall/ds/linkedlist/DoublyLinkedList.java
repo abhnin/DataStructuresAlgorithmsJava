@@ -15,6 +15,41 @@ public class DoublyLinkedList {
         headNode = node;
     }
 
+    public void insertAtTail(int data){
+        if (headNode == null){
+            DoublyNode node = new DoublyNode(data);
+            headNode = node;
+            return;
+        }
+
+        DoublyNode tempNode;
+        tempNode = headNode;
+
+        while (tempNode.getNextNode() != null){
+            tempNode = tempNode.getNextNode();
+        }
+
+
+
+        DoublyNode node = new DoublyNode(data);
+        tempNode.setNextNode(node);
+        node.setPrevNode(tempNode);
+        node.setNextNode(null);
+
+    }
+
+    public DoublyNode getTail(){
+        DoublyNode tempNode;
+        tempNode = headNode;
+
+        while (tempNode.getNextNode() != null){
+            tempNode = tempNode.getNextNode();
+        }
+
+        return tempNode;
+    }
+
+
     public int size(){
         if (this.headNode == null)
             return 0;
