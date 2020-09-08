@@ -59,7 +59,6 @@ public class LinkedList {
             }
             return null;
     }
-
     @Override
     public String toString() {
         String out = "";
