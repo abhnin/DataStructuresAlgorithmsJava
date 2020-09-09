@@ -2,17 +2,18 @@ package com.abhnin.dsalgojavall.ds.stack;
 
 import java.util.EmptyStackException;
 
-public class StackA implements Iamastack {
-    private int[] stackArray;
+public class StackA<T> implements Iamastack {
+    private Object[] stackArray;
     private int currentIndex;
 
     public StackA(int size) {
-        this.stackArray = new int[size];
+        this.stackArray = (T[]) new Object[size];
         this.currentIndex = -1;
     }
 
     @Override
-    public Boolean push(int data) {
+    public Boolean push(Object data) {
+
         if (currentIndex < this.stackArray.length -1){
             currentIndex++;
             stackArray[currentIndex] = data;
@@ -23,19 +24,19 @@ public class StackA implements Iamastack {
     }
 
     @Override
-    public int pop() {
+    public Object pop() {
             if (currentIndex < 0){
                 throw new EmptyStackException();
             }
 
-            int data = this.stackArray[currentIndex];
+            Object data = this.stackArray[currentIndex];
             this.stackArray[currentIndex] = 0;
             currentIndex--;
             return data;
     }
 
     @Override
-    public int peek() {
+    public Object peek() {
         if (currentIndex < 0){
             throw new EmptyStackException();
         }

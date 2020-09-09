@@ -2,10 +2,9 @@ package com.abhnin.dsalgojavall.ds.stack;
 
 import com.abhnin.dsalgojavall.ds.linkedlist.Node;
 
-public class StackLL implements Iamastack {
+public class StackLL  {
     Node head;
 
-    @Override
     public Boolean push(int data) {
         if (head == null){
             Node newNode = new Node(data);
@@ -18,17 +17,14 @@ public class StackLL implements Iamastack {
         return true;
     }
 
-    @Override
     public int pop() {
         return 0;
     }
 
-    @Override
     public int peek() {
         return 0;
     }
 
-    @Override
     public Boolean clear() {
         return null;
     }
